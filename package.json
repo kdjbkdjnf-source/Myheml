@@ -1,0 +1,17 @@
+{
+  "name": "yujian",
+  "version": "1.0.0",
+  "private": true,
+  "description": "遇见 · 同城生活照分享平台（Node 原生 http + sqlite，前端无构建）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --no-warnings --env-file-if-exists=.env server/index.js",
+    "dev": "node --no-warnings --env-file-if-exists=.env --watch server/index.js",
+    "seed": "node --no-warnings --env-file-if-exists=.env server/seed.js --force",
+    "reset": "node --no-warnings --env-file-if-exists=.env server/seed.js --reset"
+  },
+  "dependencies": {}
+}
