@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>遇见 · 同城生活照</title>
+<meta name="description" content="遇见是一个记录真实生活的同城分享社区：全国 300 多个城市，看生活照，认识同城的普通人。" />
+<meta name="theme-color" content="#fdfbf9" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23ef5b6b'/%3E%3Cpath d='M8 12h16M8 17h10M8 22h6' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" data-link>
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 21s-7.2-4.5-9.2-9A5.3 5.3 0 0 1 12 6.6 5.3 5.3 0 0 1 21.2 12c-2 4.5-9.2 9-9.2 9Z" fill="currentColor"/></svg>
+      </span>
+      <span class="brand-text">遇见<small>同城生活照</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="/" data-link data-nav="home">首页</a>
+      <a href="/member" data-link data-nav="member" id="nav-member">会员</a>
+      <a href="/publish" data-link data-nav="publish" id="nav-publish" hidden>新建主页</a>
+      <a href="/admin" data-link data-nav="admin" id="nav-admin" hidden>控制台</a>
+    </nav>
+    <div class="header-actions" id="header-actions"></div>
+  </div>
+</header>
+
+<main id="app" class="app"></main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">遇见 · 同城生活照</div>
+      <p class="footer-note" id="footer-note">一个记录真实生活的小社区。所有主页由平台统一整理发布，登录后即可查看联系方式。</p>
+    </div>
+    <div class="footer-links">
+      <a href="/member" data-link id="footer-member">会员说明</a>
+      <a href="/rules" data-link>平台规则</a>
+      <a href="/me" data-link>我的账号</a>
+    </div>
+  </div>
+  <div class="container footer-legal">
+    <span>© 2026 遇见</span>
+    <span>内容由平台统一整理发布 · 禁止发布违法违规与侵权内容 · 请勿在线下沟通中转账或提供验证码</span>
+  </div>
+</footer>
+
+<div class="toast-stack" id="toast-stack" aria-live="polite"></div>
+<div class="modal-root" id="modal-root"></div>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>
