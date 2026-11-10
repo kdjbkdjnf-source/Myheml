@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" width="900" height="1125">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf1ec"/>
+      <stop offset="1" stop-color="#f4e6e4"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1125" fill="url(#g)"/>
+  <g fill="none" stroke="#e0cdc6" stroke-width="2">
+    <circle cx="450" cy="500" r="96"/>
+    <path d="M366 596h168" stroke-linecap="round"/>
+  </g>
+  <g fill="#e0cdc6">
+    <circle cx="418" cy="476" r="9"/>
+    <path d="M450 620c-46 0-84-34-84-76 0-8 8-8 8 0 0 38 34 68 76 68s76-30 76-68c0-8 8-8 8 0 0 42-38 76-84 76z"/>
+  </g>
+  <text x="450" y="700" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26" fill="#c4b0a8">暂无照片</text>
+</svg>
