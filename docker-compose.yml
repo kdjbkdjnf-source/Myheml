@@ -1,0 +1,25 @@
+services:
+  app:
+    build: .
+    container_name: yujian-app
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    environment:
+      NODE_ENV: production
+      PORT: "5173"
+      # 生产环境换成自己生成的长随机串：openssl rand -hex 32
+      JWT_SECRET: "change-me-to-a-long-random-string"
+      # free = 全站免费 | manual = 人工收款 | paid = 线上支付（需商户号）
+      MEMBER_MODE: "manual"
+      # manual 模式下展示的收款信息，改成自己的
+      PAY_WECHAT_ID: "your_wechat_id"
+      PAY_PAYEE_NAME: "站长微信"
+      # 站点对外地址，反代后用来校验写请求来源；多个用逗号分隔
+      ALLOWED_ORIGINS: "https://your-domain.com"
+      FORCE_HTTPS: "1"
+      # 演示主页数据，正式上线前设 0
+      SEED_DEMO: "0"
+    volumes:
+      - ./data:/app/data
+      - ./uploads:/app/uploads

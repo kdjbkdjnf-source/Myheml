@@ -1,0 +1,21 @@
+[Unit]
+Description=Yujian (遇见) Node app
+After=network.target
+
+[Service]
+Type=simple
+User=yujian
+Group=yujian
+WorkingDirectory=/opt/yujian
+ExecStart=/usr/bin/node --no-warnings --env-file-if-exists=/opt/yujian/.env server/index.js
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ReadWritePaths=/opt/yujian/data /opt/yujian/uploads
+
+[Install]
+WantedBy=multi-user.target
